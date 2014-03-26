@@ -3,33 +3,47 @@
 	{
 		"selected_items":
 		[
+			[
+				"test",
+				"test_is_prime"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "android.css",
+			"file": "web_dev_101/euler2.js",
 			"settings":
 			{
-				"buffer_size": 347,
-				"line_ending": "Unix"
+				"buffer_size": 588,
+				"line_ending": "Unix",
+				"name": "/*Each new term in the Fibonacci sequence is gener"
 			}
 		},
 		{
-			"file": "android.html",
+			"file": "web_dev_101/euler3.js",
 			"settings":
 			{
-				"buffer_size": 307,
-				"line_ending": "Unix"
+				"buffer_size": 444,
+				"line_ending": "Unix",
+				"name": "/*The prime factors of 13195 are 5, 7, 13 and 29."
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/User/Javascript.sublime-build",
 	"command_palette":
 	{
 		"height": 54.0,
 		"selected_items":
 		[
+			[
+				"proj sa",
+				"Project: Save As"
+			],
+			[
+				"proj",
+				"Project: Close"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -69,10 +83,6 @@
 			[
 				"pro cl",
 				"Project: Close"
-			],
-			[
-				"proj",
-				"Project: Add Folder"
 			],
 			[
 				"side ",
@@ -131,7 +141,7 @@
 				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 304.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -148,6 +158,10 @@
 	},
 	"file_history":
 	[
+		"/home/anh/.config/sublime-text-2/Packages/User/Javascript.sublime-build",
+		"/home/anh/projects/studying-odin-project/odin.sublime-project",
+		"/home/anh/projects/studying-odin-project/android.html",
+		"/home/anh/projects/studying-odin-project/android.css",
 		"/home/anh/projects/odin/android.html",
 		"/home/anh/railsbridge/test_app/Gemfile",
 		"/home/anh/railsbridge/test_app/config/routes.rb",
@@ -220,53 +234,54 @@
 			[
 				{
 					"buffer": 0,
-					"file": "android.css",
+					"file": "web_dev_101/euler2.js",
 					"settings":
 					{
-						"buffer_size": 347,
+						"buffer_size": 588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								347,
-								347
+								517,
+								517
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"auto_name": "/*Each new term in the Fibonacci sequence is gener",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "android.html",
+					"file": "web_dev_101/euler3.js",
 					"settings":
 					{
-						"buffer_size": 307,
+						"buffer_size": 444,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								421,
+								421
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "/*The prime factors of 13195 are 5, 7, 13 and 29.",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -280,7 +295,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -307,7 +322,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 81.0
+		"height": 292.0
 	},
 	"output.markdown":
 	{
