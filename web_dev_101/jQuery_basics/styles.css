@@ -1,0 +1,30 @@
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: #FF3838;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.button_container {
+	width: 100%;
+	text-align: center;
+}
+
+.grid_container {
+	width: 960px;
+	height: 960px;
+	margin: auto;
+	text-align: center;
+}

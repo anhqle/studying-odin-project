@@ -12,30 +12,68 @@
 	"buffers":
 	[
 		{
-			"file": "web_dev_101/euler2.js",
+			"file": "web_dev_101/jQuery_basics/index.html",
 			"settings":
 			{
-				"buffer_size": 588,
-				"line_ending": "Unix",
-				"name": "/*Each new term in the Fibonacci sequence is gener"
+				"buffer_size": 313,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "web_dev_101/euler3.js",
+			"file": "web_dev_101/jQuery_basics/jquery.js",
 			"settings":
 			{
-				"buffer_size": 444,
-				"line_ending": "Unix",
-				"name": "/*The prime factors of 13195 are 5, 7, 13 and 29."
+				"buffer_size": 181,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web_dev_101/jQuery_basics/styles.css",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "demo/index.html",
+			"settings":
+			{
+				"buffer_size": 7617,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "demo/js/jquery.js",
+			"settings":
+			{
+				"buffer_size": 57254,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "Packages/User/Javascript.sublime-build",
 	"command_palette":
 	{
-		"height": 54.0,
+		"height": 180.0,
 		"selected_items":
 		[
+			[
+				"pick",
+				"Color Picker"
+			],
+			[
+				"col p",
+				"Color Picker"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"proj sa",
 				"Project: Save As"
@@ -43,14 +81,6 @@
 			[
 				"proj",
 				"Project: Close"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"pr",
@@ -141,7 +171,7 @@
 				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 449.0
+		"width": 503.0
 	},
 	"console":
 	{
@@ -158,6 +188,11 @@
 	},
 	"file_history":
 	[
+		"/home/anh/projects/studying-odin-project/demo/css/styles.css",
+		"/home/anh/projects/studying-odin-project/demo/js/jquery.js",
+		"/home/anh/projects/studying-odin-project/demo/index.html",
+		"/home/anh/projects/studying-odin-project/web_dev_101/euler3.js",
+		"/home/anh/projects/studying-odin-project/web_dev_101/euler2.js",
 		"/home/anh/.config/sublime-text-2/Packages/User/Javascript.sublime-build",
 		"/home/anh/projects/studying-odin-project/odin.sublime-project",
 		"/home/anh/projects/studying-odin-project/android.html",
@@ -205,6 +240,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cycleImage",
 			"builder_settings",
 			"webdriver",
 			"sdf",
@@ -229,61 +265,142 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "web_dev_101/euler2.js",
+					"file": "web_dev_101/jQuery_basics/index.html",
 					"settings":
 					{
-						"buffer_size": 588,
+						"buffer_size": 313,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								517,
-								517
+								161,
+								161
 							]
 						],
 						"settings":
 						{
-							"auto_name": "/*Each new term in the Fibonacci sequence is gener",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "web_dev_101/euler3.js",
+					"file": "web_dev_101/jQuery_basics/jquery.js",
 					"settings":
 					{
-						"buffer_size": 444,
+						"buffer_size": 181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								421,
-								421
+								157,
+								157
 							]
 						],
 						"settings":
 						{
-							"auto_name": "/*The prime factors of 13195 are 5, 7, 13 and 29.",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 32.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "web_dev_101/jQuery_basics/styles.css",
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "demo/index.html",
+					"settings":
+					{
+						"buffer_size": 7617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4212.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "demo/js/jquery.js",
+					"settings":
+					{
+						"buffer_size": 57254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -308,11 +425,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -386,7 +510,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 292.0,
 	"status_bar_visible": true
 }
