@@ -1,5 +1,5 @@
 var genGrid = function(num_grid) {
-    var square_size = ($(".grid_container").height() / num_grid) + "px";
+    var square_size = ($(".grid_container").height / num_grid) + "px";
     alert(square_size);
     var square = "<div class='square' style='height:" + square_size + ";\
         width: " + square_size + "'></div>";
@@ -20,7 +20,7 @@ var genGrid = function(num_grid) {
 };
 
 
-$(document).ready( function() {
+$(document).ready(function() {
     genGrid(16);
     $("button").click(function() {
         $(".grid_container").empty();
