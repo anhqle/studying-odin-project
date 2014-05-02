@@ -1,14 +1,9 @@
-## Points to Ponder
-
-*Look through these now and then use them to test yourself after doing the assignment*
- 
-
-**Note:** We recommend you read through the list, do the assignment, and then test yourself by seeing if you can answer all these questions.
-
-* **Numbers, Operators and Expressions:**
+## **Numbers, Operators and Expressions:**
 
     * What's the difference between an `Integer` and a `Float?`
+        * blah blah blah 
     * Why should you be careful when converting back and forth between integers and floats?
+        * blah blah
     * What's the difference between `=`, `==`, and `===`?
     * How do you do exponents in Ruby?
     * What is a `range`?
@@ -16,7 +11,7 @@
     * What's the difference between `(1..3)` and `(1...3)`?
     * What are three ways to create a range?
 
-* **Strings:**
+## **Strings:**
 
     * What's the difference between single and double quotes?
     * What is string interpolation?
