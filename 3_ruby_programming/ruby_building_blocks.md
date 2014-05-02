@@ -13,7 +13,7 @@ Converting from integers to float should not be a problem (?). Converting float 
 
 * `=` is for assigment. Ex: `a = 3` assigns value 3 to `a`
 * `==` is for comparison / checking equality. Ex: `a == 3` returns a Boolean
-* `===` is for checking equality in both type and value
+* For `===`, see this [StackOverflow](http://stackoverflow.com/questions/3422223/vs-in-ruby) answer. Quote: "The best way to describe `a === b` is "if I have a drawer labeled `a`, does it make sense to put `b` in it?""
 
 4. How do you do exponents in Ruby?
 5. What is a `range`?
