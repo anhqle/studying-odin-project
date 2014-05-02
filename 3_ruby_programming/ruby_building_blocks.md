@@ -125,6 +125,10 @@ Some characters have a special meaning in Regular Expression, e.g `\n, a line br
   * What is `nil`?
   * How do you check if something is `nil`?
   * What's the difference between `nil` and `blank` and `empty`?
+
+`blank` is like `empty` but can also be used on `nil` object. See answer on [StackOverflow](http://stackoverflow.com/questions/885414/a-concise-explanation-of-nil-v-empty-v-blank-in-ruby-on-rails)
+
+
   * Are the following `nil` or `empty`?
       * `" "`, `""`, `[]`, `[""]`, `{}` 
   * What's the difference between `puts` and `p` and `print`?
