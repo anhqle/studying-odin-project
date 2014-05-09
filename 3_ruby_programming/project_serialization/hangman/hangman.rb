@@ -1,3 +1,5 @@
+require 'yaml'
+
 class Player
   attr_accessor :guessed_char
 
@@ -15,7 +17,7 @@ class Player
 end
 
 class Word
-  attr_accessor :answer
+  attr_reader :answer
 
   def initialize(word)
     @answer = word
@@ -63,8 +65,8 @@ class Session
 
   def prompt_move
     puts "Enter the letter you want to guess"
-    while ch = gets.chomp
-      case @p.guessed_char.include? ch
+    while ch = gets.chomp.downcase
+      case @p.guessed_char.include?(ch)
       when true
         puts "Choose something you have not guessed"
       when false
@@ -73,25 +75,79 @@ class Session
     end
   end
 
+  def save_game(player, word, board)
+    outfile = File.open("./saved/#{Time.now.to_s.split.join("_")}", "w")
+    yaml = YAML::dump([player, word, board], outfile)
+    outfile.close
+  end
+
   def one_turn
     ch = prompt_move
-    @p.guessed_char << ch
-    @b.counter += 1
-
-    @b.print
+    case ch == 'save'
+    when true
+      return 'save'
+    when false
+      @p.guessed_char << ch
+      @b.counter += 1
+      @b.print
+    end
   end
 
   def start
-    puts "Guess this word: #{@w.current_state(@p)}"
+    puts "Welcome to Hangman! Guess a letter or type 'save' at any time\n"
+    @b.print
     while @b.counter <= 10
-      one_turn
+      if one_turn == 'save'
+        save_game(@p, @w, @b)
+        saved = true
+        puts "Game saved!"
+        break
+      end
+        
       if @p.win?(@w)
         puts "You win!"
         break
       end
-      puts "____________________________________________"
+      puts "\n"
     end
 
-    puts "You lose! The answer is #{@w.answer}" if not @p.win?(@w)
+    puts "You lose! The answer is #{@w.answer}" if (not @p.win?(@w)) && (not saved)
   end
 end
+
+class Game
+
+  def load_game(index)
+    fname = Dir.glob(File.join("./saved/", "*"))[index]
+    yaml = File.read(fname)
+    s = Session.new
+    s.p, s.w, s.b = YAML::load(yaml)
+    return s
+  end
+
+  def list_saved
+    Dir.glob(File.join("./saved/", "*")).each_with_index do |fname, i|
+      puts "#{i}: #{fname}"
+    end
+  end
+
+  def start
+    puts "Do you want to (1) start new game or (2) load saved game?"
+    while input = gets.chomp.to_i
+      case input
+      when 1
+        Session.new.start
+        break
+      when 2
+        list_saved
+        puts "Pick the save id you want to load?"
+        chosen_id = gets.chomp.to_i
+        load_game(chosen_id).start
+        break
+      else
+        puts "You have to choose 1 or 2"
+      end
+    end
+  end
+end
+

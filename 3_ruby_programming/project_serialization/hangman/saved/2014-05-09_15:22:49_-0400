@@ -1,0 +1,11 @@
+---
+- &2 !ruby/object:Player
+  guessed_char:
+  - e
+  - i
+- &1 !ruby/object:Word
+  answer: dashiki
+- !ruby/object:Board
+  counter: 2
+  word: *1
+  player: *2
