@@ -1,0 +1,18 @@
+---
+- &2 !ruby/object:Player
+  guessed_char:
+  - ''
+  - a
+  - f
+  - h
+  - t
+  - e
+  - n
+  - l
+  - m
+- &1 !ruby/object:Word
+  answer: swearer
+- !ruby/object:Board
+  counter: 9
+  word: *1
+  player: *2
