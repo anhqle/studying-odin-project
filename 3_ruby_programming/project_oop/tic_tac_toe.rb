@@ -78,7 +78,7 @@ class Session
         when true
           return m
         when false
-          puts "Make sure to choose only available cell"
+          puts "Make sure to choose only available cell"sh
         end
       end
     end
